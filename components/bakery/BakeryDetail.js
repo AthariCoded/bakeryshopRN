@@ -31,7 +31,7 @@ const BakeryDetail = ({ navigation, route }) => {
         <BakeryDetailImage source={{ uri: bakery.image }} />
         <BakeryDetailTitle>{bakery.name}</BakeryDetailTitle>
       </BakeryDetailWrapper>
-      <ProductList products={products} />
+      <ProductList products={products} navigation={navigation} />
     </>
   );
 };

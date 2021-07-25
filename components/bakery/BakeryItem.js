@@ -6,13 +6,16 @@ import { List } from "native-base";
 
 //styles
 import { BakeryItemStyled } from "./styles";
+
 const BakeryItem = ({ bakery, navigation }) => {
+  // console.log(bakery.image);
+
   return (
     <List.Item
       onPress={() => navigation.navigate("BakeryDetail", { bakery: bakery })}
     >
       <Image
-        source={{ uri: bakery.image }}
+        source={{ url: bakery.image }}
         style={{ width: 100, height: 100 }}
       />
       <BakeryItemStyled>{bakery.name}</BakeryItemStyled>

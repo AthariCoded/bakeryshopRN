@@ -14,6 +14,7 @@ import bakeryStore from "../../stores/bakeryStore";
 
 //styles
 import { ListWrapper } from "./styles";
+
 const BakeryList = ({ navigation }) => {
   if (bakeryStore.loading) return <Spinner />;
   const bakeryList = bakeryStore.bakeries.map((bakery) => (
