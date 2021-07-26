@@ -15,7 +15,10 @@ const theme = {
   backgroundColor: "#e0fbfc",
   pink: "#f283a2",
   red: "red",
+  white: "#fff",
+  blue: "#90d4ed",
 };
+
 export default function App() {
   return (
     <NativeBaseProvider>
