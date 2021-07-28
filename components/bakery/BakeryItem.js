@@ -15,7 +15,7 @@ const BakeryItem = ({ bakery, navigation }) => {
       onPress={() => navigation.navigate("BakeryDetail", { bakery: bakery })}
     >
       <Image
-        source={{ url: bakery.image }}
+        source={{ uri: bakery.image }}
         style={{ width: 100, height: 100 }}
       />
       <BakeryItemStyled>{bakery.name}</BakeryItemStyled>

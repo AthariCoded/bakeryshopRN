@@ -1,5 +1,6 @@
 import styled from "styled-components/native";
 import { FontAwesome } from "@expo/vector-icons";
+import { FaSignOutAlt } from "react-icons/fa";
 
 export const TotalPrice = styled.Text`
   color: ${(props) => props.theme.pink};
@@ -33,4 +34,9 @@ export const CheckoutButtonText = styled.Text`
   color: #fcfdff;
   font-weight: bold;
   font-size: 18px;
+`;
+export const SignoutStyled = styled.Text`
+  color: ${(props) => props.theme.red};
+  font-size: 18px;
+  margin: 5px;
 `;
